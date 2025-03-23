@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Informaticien</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .slide-in {
+            animation: slideIn 0.5s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-400 text-white p-5">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="logo">
+                <h1 class="text-2xl font-bold">ONDI APILI <br> RONN' GEOFFRY</h1>
+            </div>
+            <nav id="navMenu" class="hidden md:flex space-x-4">
+                <ul class="flex space-x-4">
+                    <li><a href="#apropos" class="hover:underline">À propos de moi</a></li>
+                    <li><a href="#competences" class="hover:underline">Compétences</a></li>
+                    <li><a href="#experience" class="hover:underline">Expérience</a></li>
+                    <li><a href="#projets" class="hover:underline">Projets</a></li>
+                    <li><a href="#contact" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle md:hidden cursor-pointer" id="menuToggle">
+                <div class="bar w-6 h-1 bg-white mb-1"></div>
+                <div class="bar w-6 h-1 bg-white mb-1"></div>
+                <div class="bar w-6 h-1 bg-white"></div>
+            </div>
+        </div>
+        <nav id="mobileMenu" class="md:hidden hidden bg-blue-400">
+            <ul class="flex flex-col items-center space-y-2 p-4">
+                <li><a href="#apropos" class="hover:underline text-white">À propos de moi</a></li>
+                <li><a href="#competences" class="hover:underline text-white">Compétences</a></li>
+                <li><a href="#experience" class="hover:underline text-white">Expérience</a></li>
+                <li><a href="#projets" class="hover:underline text-white">Projets</a></li>
+                <li><a href="#contact" class="hover:underline text-white">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="ONDI APILI" class="container mx-auto my-8 p-6 bg-blue-400">
+        <h2 class="text-3xl font-semibold text-center">ONDI APILI</h2>
+            <img class="profile-picture rounded-full w-52 h-52 mx-auto" src="ron.jpg" alt="Profile Picture" />            
+            <br>    
+
+            <p align="center">Développeur Full Stack</p>
+                <p  align="center" >Data Analyste  </p>
+              <p align="center">  <button class="mt-2 border border-purple-200 bg-white rounded-lg shadow hover:bg-purple-600 hover:text-white px-4 py-2">
+                    Telecharger mon cv</p>
+                </button>
+            </p>
+    </section> 
+    
+
+    <section id="apropos" class="container mx-auto my-8 p-6 bg-blue-400">
+        <h2 class="text-3xl font-semibold text-center">À propos de moi</h2>
+    <section id="apropos" class="flex flex-col items-center bg-white p-5 rounded shadow-lg transition-transform transform hover:scale-105">   
+        </div> 
+        <p class="mt-4">Passionné par l'informatique et les nouvelles technologies, je suis spécialisé en développement web et logiciels. Gabonais d'origine vivant au
+             Sénégal depuis 2023 et j'exerce dans le domaine de l'informatique depuis 2023 également. Cette passion, que j'ai depuis mes 18 ans pour le développement des programmes, applications et sites web
+              me permet de travailler avec amour sur mes projets. Je suis polyvalent et diligent dans tout ce que je fais. De même, je sais gérer le stress et je peux travailler sous pression.</p>
+    </section>
+    </section>
+
+
+    <section id="competences" class="container mx-auto my-8 p-6 bg-blue-400">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold">Compétences</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                <div class="flex flex-col items-center bg-white p-5 rounded shadow-lg transition-transform transform hover:scale-105">
+                    <h3 class="font-bold">Développement Web</h3>                
+                    <p>HTML <img src="image/html-5.png" width="20px"> CSS <img src="image/css-3.png" width="20px"> JavaScript <img src="image/javascript.png" width="20px"></p>        
+                </div>
+                <div class="flex flex-col items-center bg-white p-5 rounded shadow-lg transition-transform transform hover:scale-105">
+                    <h3 class="font-bold">Back-end</h3>             
+                        <p>Node.js <img src="image/programing.png" width="20px"> PHP <img src="image/php.png" width="20px"> Python <img src="image/python.png" width="20px"> Java <img src="image/java.png" width="20px"></p>
+                </div>
+                <div class="flex flex-col items-center bg-white p-5 rounded shadow-lg transition-transform transform hover:scale-105">
+                    <h3 class="font-bold">Frameworks</h3>               
+                        <p>React <img src="image/react.png" width="20px"> Angular <img src="image/programing.png" width="20px"> Vue.js <img src="image/vuejs.png" width="20px"></p>                 
+                </div>
+
+                <div class="flex flex-col items-center bg-white p-5 rounded shadow-lg transition-transform transform hover:scale-105">
+                    <h3 class="font-bold">Base de données :</h3>                 
+                <p>MySQL <img src="image/mysql.png" width="20px"> PostgreSQL <img src="image/database.png" width="20px"></p>                                  
+                </div>
+
+                <div class="flex flex-col items-center bg-white p-5 rounded shadow-lg transition-transform transform hover:scale-105">
+                    <span>Outils :</span>
+                <p>Git <img src="image/github.png" width="20px"> Docker <img src="image/docker.png" width="20px"> Jenkins <img src="image/containers.png" width="20px"></p>
+                </div>
+
+                <div class="flex flex-col items-center bg-white p-5 rounded shadow-lg transition-transform transform hover:scale-105">
+                    <span>Autres :</span>
+                    <p>Linux <img src="image/linux.png" width="20px"> AWS <img src="image/file.png" width="20px"> Azure <img src="image/azure.png" width="20px"></p>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="container mx-auto my-8 p-6 bg-blue-400">
+        <h2 align="center" class="text-3xl font-semibold">Expérience Professionnelle</h2>
+        <section id="apropos" class="flex flex-col items-center bg-white p-5 rounded shadow-lg transition-transform transform hover:scale-105">
+            <div class="container mx-auto text-center">
+                <h3 class="text-xl mt-4">Développeur Full Stack - XYZ Tech (2020 - Présent)</h3>
+                <p>Développement et maintenance d'applications web performantes et sécurisées.</p>
+                <h3 class="text-xl mt-4">Ingénieur Logiciel - ABC Solutions (2017 - 2020)</h3>
+                <p>Conception et implémentation de solutions logicielles adaptées aux besoins des clients.</p>
+            </div>   
+    </section>    
+    </section>
+
+    <section id="projets" class="container mx-auto my-8 p-6 bg-blue-400">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold">Projets</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                <div class="flex flex-col items-center bg-white p-5 rounded shadow-lg transition-transform transform hover:scale-105">
+                    <h3 class="font-bold">Série de jeux</h3>
+                    <a href="Projet2/index.html"><img src="image/board-game.png" class="w-32" alt="Série de jeux"></a>
+                </div>
+                <div class="flex flex-col items-center bg-white p-5 rounded shadow-lg transition-transform transform hover:scale-105">
+                    <h3 class="font-bold">Site de coiffure</h3>
+                    <a href="ONDI COIFFE PERFECTION/Acceuill.html"><img src="image/ondi-coiffe-perfection-1.png" class="profile-picture rounded-full w-52 h-52 mx-auto" alt="Site de coiffure"></a>
+                </div>
+                <div class="flex flex-col items-center bg-white p-5 rounded shadow-lg transition-transform transform hover:scale-105">
+                    <h3 class="font-bold">Applications web en Java</h3>
+                    <a href="script control/index.html"><img src="image/javascript.png" class="w-32" alt="Applications web en Java"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+            <div class="flex flex-col items-center bg-white p-5 rounded shadow-lg transition-transform transform hover:scale-105">
+                <h3 class="font-bold">Bibliotheque</h3>
+                <a href="Projet2/index.html"><img src="image/Bibliothèque.jpg" class="w-32" alt="Série de jeux"></a>
+            </div>
+            <div class="flex flex-col items-center bg-white p-5 rounded shadow-lg transition-transform transform hover:scale-105">
+                <h3 class="font-bold">Site de location maison</h3>
+                <a href=""><img src="image/Hebergement.jpg" class="w-32" alt="Site de coiffure"></a>
+            </div>
+            <div class="flex flex-col items-center bg-white p-5 rounded shadow-lg transition-transform transform hover:scale-105">
+                <h3 class="font-bold">Calculatrice IMC</h3>
+                <a href="script control/index.html"><img src="image/javascript.png" class="w-32" alt="Applications web en Java"></a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="contact" class="container mx-auto my-8 p-6 bg-blue-400">
+        <h2 class="text-3xl font-semibold text-center">Contact</h2>
+    <section id="contact" class="container mx-auto my-8 p-6   bg-white rounded-lg shadow">
+      <p align="center">  <img src="image/phone-call.png" width="15" alt="Phone Icon"></p>
+        <form id="contactForm" class="mt-4">
+            <label class="block mb-2" for="name">Nom :</label>
+            <input class="border border-gray-300 rounded w-full p-2 mb-4" type="text" id="name" name="name" required>
+            
+            <label class="block mb-2" for="email">Email :</label>
+            <input class="border border-gray-300 rounded w-full p-2 mb-4" type="email" id="email" name="email" required>
+            
+            <label class="block mb-2" for="message">Message :</label>
+            <textarea class="border border-gray-300 rounded w-full p-2 mb-4" id="message" name="message" rows="4" required></textarea>
+            
+            <button class="bg-blue-400 text-white font-bold py-2 px-4 rounded" type="submit">Envoyer<img  src="image/email.png" width="15" alt="Email Icon"></button>
+        </form>   
+        <p id="status" class="mt-4"></p>
+    </section>
+</section>
+    <p align="center">
+    </p>
+      
+
+    <footer class="bg-blue-400 text-white text-center p-5">
+        <p>Email : ondiapilironngeoffry@mail.com</p>
+        <p>Téléphone : +221 78 710 53 70</p>
+    </footer>
+
+    <script>
+        // Gestion du menu hamburger
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelector("#contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            // Gestion de l'envoi d'email (ajoutez votre code ici)
+            document.getElementById("status").innerText = "Message envoyé avec succès!";
+        });
+    </script>
+</body>
+
+</html>
